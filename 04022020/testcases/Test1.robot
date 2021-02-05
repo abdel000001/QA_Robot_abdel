@@ -1,9 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary    
-
+Documentation    expliquer 
 
 *** Test Cases ***
-T001 Login Test
+t1
     
     open Browser  https://opensource-demo.orangehrmlive.com/   gc 
     maximize Browser window
@@ -13,5 +13,6 @@ T001 Login Test
     Input Text    locator    text    
     Input Password    locator    password    
     Click Button    locator    
-T002 Login Test
-    
+t2
+    log to console  hello
+    [Documentation]    ceci est rien du tout  
